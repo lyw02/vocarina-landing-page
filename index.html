@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div>
@@ -13,19 +19,72 @@
         <span class="title-color">Vocarina Project Landing Page</span>
       </h1>
     </div>
-    <div class="links-container">
+    <div class="div-container">
       <h3 class="subtitle">Relavant links</h3>
       <hr />
       <ul class="links">
         <li class="link-item">
-          <span class="link-item-span">Poster: <a href="https://postimg.cc/n9D2L7K9">https://postimg.cc/n9D2L7K9</a></span></li>
-        <li class="link-item">
-          <span class="link-item-span">Demo video (semester 1): <a href="https://www.youtube.com/watch?v=5x2gy2BOK2w">https://www.youtube.com/watch?v=5x2gy2BOK2w</a></span>
+          <span class="link-item-span"
+            >Poster:
+            <a href="https://postimg.cc/n9D2L7K9"
+              >https://postimg.cc/n9D2L7K9</a
+            ></span
+          >
         </li>
         <li class="link-item">
-          <span class="link-item-span">GitHub repo: <a href="https://github.com/lyw02/vocarina">https://github.com/lyw02/vocarina</a></span>
+          <span class="link-item-span"
+            >Demo video (semester 1):
+            <a href="https://www.youtube.com/watch?v=5x2gy2BOK2w"
+              >https://www.youtube.com/watch?v=5x2gy2BOK2w</a
+            ></span
+          >
+        </li>
+        <li class="link-item">
+          <span class="link-item-span"
+            >GitHub repo:
+            <a href="https://github.com/lyw02/vocarina"
+              >https://github.com/lyw02/vocarina</a
+            ></span
+          >
         </li>
       </ul>
+    </div>
+    <div class="div-container">
+      <div role="tablist" class="tabs tabs-bordered">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
+          class="tab"
+          aria-label="Poster"
+          checked
+        />
+        <div role="tabpanel" class="tab-content p-10">
+          <img src="assets/poster2.png" />
+        </div>
+
+        <input
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
+          class="tab"
+          aria-label="Logo"
+        />
+        <div role="tabpanel" class="tab-content p-10">
+          <img src="assets/logo.png" />
+        </div>
+
+        <input
+          type="radio"
+          name="my_tabs_1"
+          role="tab"
+          class="tab"
+          aria-label="Vocarina"
+        />
+        <div role="tabpanel" class="tab-content p-10">
+          <img src="assets/figure.jpg" />
+        </div>
+      </div>
     </div>
   </body>
 </html>
